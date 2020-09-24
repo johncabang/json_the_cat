@@ -19,7 +19,7 @@ const fetchBreedDescription = function(breed, callback) {
       callback('Sorry breed not found.', null);
     } else {
       // console.log(data[0].description); // Return breed description
-      callback(null, data[0].description);
+      callback(error, data[0].description);
     }
   });
 };
